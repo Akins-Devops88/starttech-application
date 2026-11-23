@@ -2,13 +2,13 @@ package cache
 
 import (
 	"context"
+	"crypto/tls"
 	"encoding/json"
 	"log"
-	// "strconv"
 	"time"
 
-	"github.com/redis/go-redis/v9"
 	"github.com/Innocent9712/much-to-do/Server/MuchToDo/internal/config"
+	"github.com/redis/go-redis/v9"
 )
 
 // Cache defines the interface for a caching service.
@@ -35,16 +35,34 @@ func NewCacheService(cfg config.Config) Cache {
 	}
 
 	log.Println("Caching is enabled. Connecting to Redis...")
-	rdb := redis.NewClient(&redis.Options{
+
+	redisOptions := &redis.Options{
 		Addr:     cfg.RedisAddr,
 		Password: cfg.RedisPassword,
-		DB:       0, // use default DB
-	})
+		DB:       0,
+	}
 
-	// Ping Redis to check the connection
-	if err := rdb.Ping(context.Background()).Err(); err != nil {
-		log.Fatalf("Could not connect to Redis: %v. Caching will be disabled.", err)
-		// Fallback to no-op cache if connection fails
+	// Enable TLS when requested by the environment.
+	if cfg.RedisTLS {
+		redisOptions.TLSConfig = &tls.Config{
+			MinVersion: tls.VersionTLS12,
+		}
+	}
+
+	rdb := redis.NewClient(redisOptions)
+
+	// Use a timeout to prevent an indefinite connection attempt.
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	// Check the Redis connection.
+	if err := rdb.Ping(ctx).Err(); err != nil {
+		log.Printf("Could not connect to Redis: %v. Caching will be disabled.", err)
+
+		// Close the unsuccessful Redis client.
+		_ = rdb.Close()
+
+		// Fall back to the no-operation cache.
 		return &NoOpCache{}
 	}
 
@@ -55,8 +73,9 @@ func NewCacheService(cfg config.Config) Cache {
 func (r *RedisCache) Get(ctx context.Context, key string, dest interface{}) error {
 	val, err := r.client.Get(ctx, key).Result()
 	if err != nil {
-		return err // redis.Nil if not found
+		return err
 	}
+
 	return json.Unmarshal([]byte(val), dest)
 }
 
@@ -65,6 +84,7 @@ func (r *RedisCache) Set(ctx context.Context, key string, value interface{}, exp
 	if err != nil {
 		return err
 	}
+
 	return r.client.Set(ctx, key, p, expiration).Err()
 }
 

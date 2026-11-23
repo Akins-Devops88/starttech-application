@@ -66,3 +66,4 @@ internal/handlers/handlers_test.go.cp
 # Terraform variable snapshots and local backups
 *.tfvars.*
 !*.tfvars.example
+!.env.example
