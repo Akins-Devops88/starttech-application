@@ -208,9 +208,24 @@ The backend image is stored in Amazon ECR:
 - Kubernetes namespace: muchtodo.
 - Backend replicas: 2.
 - Backend container port: 8080.
-- Application Load Balancer currently exposes HTTP on port 80.
+- The Application Load Balancer exposes HTTP on port 80 for backend ingress; public HTTPS is provided by CloudFront.
+- Frontend is hosted in a private Amazon S3 bucket and delivered through CloudFront Origin Access Control.
+- CloudFront serves the public application over HTTPS.
+- CloudFront distribution: E2975DW0YE6P1B.
+- Public application URL: https://d2zcj0nnq60smq.cloudfront.net/
 
-HTTPS termination and CloudFront frontend delivery must be configured and verified separately before being considered complete.
+### 7.1 Production Endpoint Verification
+
+The following production checks completed successfully:
+
+| Endpoint | Expected result | Verified result |
+|---|---|---|
+| `/` | Frontend available | HTTP 200 |
+| `/api/health` | Database and cache healthy | HTTP 200 |
+| `/api/ping` | Backend responds | HTTP 200 |
+| `/api/users/me` without token | Authentication required | HTTP 401 |
+
+The health endpoint returned database and cache status as OK. The protected user endpoint returned HTTP 401 because no authorization token was supplied, as expected.
 
 ## 8. Security Practices
 
@@ -248,4 +263,4 @@ https://github.com/Akins-Devops88/starttech-infra
 - Do not commit `.env` files, AWS credentials, Terraform state, or Kubernetes Secret values.
 - Use the `.env.example` files as templates for local configuration.
 - Verify AWS infrastructure settings before making changes to deployed resources.
-- CloudFront, private S3 frontend hosting, HTTPS delivery, and automated GitHub Actions deployment should only be described as completed after implementation and verification.
+- CloudFront, private S3 frontend hosting, HTTPS delivery, and automated GitHub Actions deployment have been implemented and verified for this assessment.
