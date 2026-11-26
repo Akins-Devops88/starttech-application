@@ -78,11 +78,18 @@ jobs:
           ECR_REGISTRY: ${{ steps.ecr.outputs.registry }}
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker build \
-            -t "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
-            ./backend
-
-          docker push "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          if aws ecr describe-images \
+            --repository-name "$ECR_REPOSITORY" \
+            --image-ids imageTag="$IMAGE_TAG" \
+            --region "$AWS_REGION" >/dev/null 2>&1; then
+            echo "Image tag $IMAGE_TAG already exists. Reusing immutable image."
+          else
+            echo "Image tag $IMAGE_TAG does not exist. Building and pushing."
+            docker build \
+              -t "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG" \
+              ./backend
+            docker push "$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          fi
 
       - name: Install kubectl
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
