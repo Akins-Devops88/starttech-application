@@ -1,0 +1,45 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Node.js
+node_modules/
+dist/
+coverage/
+.npm/
+
+# Go build artifacts
+*.exe
+*.test
+*.out
+vendor/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+*.tfvars
+*.tfvars.json
+!*.example.tfvars
+
+# Kubernetes credentials and secret manifests
+kubeconfig
+.kube/
+**/*secret*.yaml
+**/*secret*.yml
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

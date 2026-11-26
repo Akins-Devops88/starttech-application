@@ -1,0 +1,2 @@
+NAME                        CLASS   HOSTS   ADDRESS                                                                   PORTS   AGE
+starttech-backend-ingress   alb     *       k8s-muchtodo-starttec-aa75687f01-1658252179.eu-west-2.elb.amazonaws.com   80      8h

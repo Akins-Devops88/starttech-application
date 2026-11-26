@@ -1,0 +1,2 @@
+NAME                        TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+starttech-backend-service   ClusterIP   172.20.69.159   <none>        8080/TCP   17h

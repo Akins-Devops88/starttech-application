@@ -1,0 +1,100 @@
+[GIN] 2026/11/26 - 07:04:22 | 200 |    9.269938ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:04:28.373653757Z","level":"INFO","msg":"request started","request_id":"e9e89533-fe13-4b3c-a68a-52402da245c3","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:04:28.373690015Z","level":"INFO","msg":"request completed","request_id":"e9e89533-fe13-4b3c-a68a-52402da245c3","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":94559}
+[GIN] 2026/11/26 - 07:04:28 | 200 |     103.896µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:04:28.375397029Z","level":"INFO","msg":"request started","request_id":"fc73d91e-7faa-4df5-8d92-c39b793fed05","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:04:28.375433761Z","level":"INFO","msg":"request completed","request_id":"fc73d91e-7faa-4df5-8d92-c39b793fed05","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":85152}
+[GIN] 2026/11/26 - 07:04:28 | 200 |      94.274µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:04:32.472900336Z","level":"INFO","msg":"request started","request_id":"f1f2b0cd-77dd-4b32-bd71-05b579e2e465","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:04:32.481975142Z","level":"INFO","msg":"request completed","request_id":"f1f2b0cd-77dd-4b32-bd71-05b579e2e465","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9125315}
+[GIN] 2026/11/26 - 07:04:32 | 200 |    9.153879ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:04:42.159919513Z","level":"INFO","msg":"request started","request_id":"df264385-6aa7-4857-8522-01f510d73fd3","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:04:42.159949463Z","level":"INFO","msg":"request completed","request_id":"df264385-6aa7-4857-8522-01f510d73fd3","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":100474}
+[GIN] 2026/11/26 - 07:04:42 | 200 |     109.166µs |      10.0.11.82 | GET      "/ping"
+{"time":"2026-11-26T07:04:42.472522303Z","level":"INFO","msg":"request started","request_id":"9518b9a2-cdd4-4fc6-a7be-f4f8cef9348d","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:04:42.481522379Z","level":"INFO","msg":"request completed","request_id":"9518b9a2-cdd4-4fc6-a7be-f4f8cef9348d","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9043451}
+[GIN] 2026/11/26 - 07:04:42 | 200 |    9.070259ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:04:43.37799787Z","level":"INFO","msg":"request started","request_id":"7d99c531-15ef-4f29-b4a6-c37007281953","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:04:43.378029537Z","level":"INFO","msg":"request completed","request_id":"7d99c531-15ef-4f29-b4a6-c37007281953","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":82672}
+[GIN] 2026/11/26 - 07:04:43 | 200 |      91.445µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:04:43.379472613Z","level":"INFO","msg":"request started","request_id":"424cd7b4-b21f-4f3f-88a8-6b43e0d64f89","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:04:43.379501666Z","level":"INFO","msg":"request completed","request_id":"424cd7b4-b21f-4f3f-88a8-6b43e0d64f89","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":71420}
+[GIN] 2026/11/26 - 07:04:43 | 200 |      79.824µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:04:52.473123512Z","level":"INFO","msg":"request started","request_id":"5ba0472f-ef5d-44f2-9f32-260a2b8dd4ce","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:04:52.482502725Z","level":"INFO","msg":"request completed","request_id":"5ba0472f-ef5d-44f2-9f32-260a2b8dd4ce","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9426213}
+[GIN] 2026/11/26 - 07:04:52 | 200 |    9.452618ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:04:58.382243902Z","level":"INFO","msg":"request started","request_id":"6736c7ef-5880-40f8-aae8-44e55ea8fe80","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:04:58.382283043Z","level":"INFO","msg":"request completed","request_id":"6736c7ef-5880-40f8-aae8-44e55ea8fe80","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":92487}
+[GIN] 2026/11/26 - 07:04:58 | 200 |     102.977µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:04:58.383416509Z","level":"INFO","msg":"request started","request_id":"510cddb2-64f2-4db5-a58b-35ca7907ae4d","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:04:58.38344294Z","level":"INFO","msg":"request completed","request_id":"510cddb2-64f2-4db5-a58b-35ca7907ae4d","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":69416}
+[GIN] 2026/11/26 - 07:04:58 | 200 |      77.042µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:05:02.160709614Z","level":"INFO","msg":"request started","request_id":"4908f9a9-b031-4d9b-8ba0-3e637bb226c9","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:02.160888782Z","level":"INFO","msg":"request completed","request_id":"4908f9a9-b031-4d9b-8ba0-3e637bb226c9","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":180921}
+[GIN] 2026/11/26 - 07:05:02 | 200 |     248.626µs |      10.0.11.82 | GET      "/ping"
+{"time":"2026-11-26T07:05:02.473112807Z","level":"INFO","msg":"request started","request_id":"72a9f7c7-2bad-4ede-9ae0-e5868a8ec7d7","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:02.482374581Z","level":"INFO","msg":"request completed","request_id":"72a9f7c7-2bad-4ede-9ae0-e5868a8ec7d7","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9331442}
+[GIN] 2026/11/26 - 07:05:02 | 200 |    9.367124ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:05:12.472585745Z","level":"INFO","msg":"request started","request_id":"d13d7b81-f2be-4aa1-a775-6b3d62f645e9","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:12.481639415Z","level":"INFO","msg":"request completed","request_id":"d13d7b81-f2be-4aa1-a775-6b3d62f645e9","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9094140}
+[GIN] 2026/11/26 - 07:05:12 | 200 |    9.130024ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:05:13.385655664Z","level":"INFO","msg":"request started","request_id":"72a5956b-66e2-4691-81ee-822b0c6453f2","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:13.38569301Z","level":"INFO","msg":"request completed","request_id":"72a5956b-66e2-4691-81ee-822b0c6453f2","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":93503}
+[GIN] 2026/11/26 - 07:05:13 | 200 |     102.553µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:05:13.387249146Z","level":"INFO","msg":"request started","request_id":"338fbf19-0fac-4449-9942-8e176d095a31","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:13.387274841Z","level":"INFO","msg":"request completed","request_id":"338fbf19-0fac-4449-9942-8e176d095a31","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":66987}
+[GIN] 2026/11/26 - 07:05:13 | 200 |      75.154µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:05:22.160075851Z","level":"INFO","msg":"request started","request_id":"ccfd7930-0be4-4afe-9bef-4988be3098b4","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:22.160111293Z","level":"INFO","msg":"request completed","request_id":"ccfd7930-0be4-4afe-9bef-4988be3098b4","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":85811}
+[GIN] 2026/11/26 - 07:05:22 | 200 |      97.157µs |      10.0.11.82 | GET      "/ping"
+{"time":"2026-11-26T07:05:22.472575289Z","level":"INFO","msg":"request started","request_id":"cf0dfa20-61e8-4adf-b667-edec012f60cc","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:22.481724106Z","level":"INFO","msg":"request completed","request_id":"cf0dfa20-61e8-4adf-b667-edec012f60cc","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9189561}
+[GIN] 2026/11/26 - 07:05:22 | 200 |    9.217509ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:05:28.39013318Z","level":"INFO","msg":"request started","request_id":"98e61224-3f38-418d-816e-5365acca4dba","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:28.390171063Z","level":"INFO","msg":"request completed","request_id":"98e61224-3f38-418d-816e-5365acca4dba","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":88566}
+[GIN] 2026/11/26 - 07:05:28 | 200 |      98.246µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:05:28.391599701Z","level":"INFO","msg":"request started","request_id":"b54c364c-cc4c-43a3-9a2c-7e57b22f6d57","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:28.391630498Z","level":"INFO","msg":"request completed","request_id":"b54c364c-cc4c-43a3-9a2c-7e57b22f6d57","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":71256}
+[GIN] 2026/11/26 - 07:05:28 | 200 |      80.238µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:05:32.472653695Z","level":"INFO","msg":"request started","request_id":"dc23b2b6-7383-4a3a-8563-ce48da8c35a9","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:32.481831025Z","level":"INFO","msg":"request completed","request_id":"dc23b2b6-7383-4a3a-8563-ce48da8c35a9","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9216174}
+[GIN] 2026/11/26 - 07:05:32 | 200 |    9.249935ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:05:42.159760358Z","level":"INFO","msg":"request started","request_id":"7c751806-4efd-4ed5-8322-dba29f3cfc33","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:42.159805122Z","level":"INFO","msg":"request completed","request_id":"7c751806-4efd-4ed5-8322-dba29f3cfc33","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":92904}
+[GIN] 2026/11/26 - 07:05:42 | 200 |     103.692µs |      10.0.11.82 | GET      "/ping"
+{"time":"2026-11-26T07:05:42.473077411Z","level":"INFO","msg":"request started","request_id":"44112055-0cd3-4192-9bd5-89b66d08aa9d","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:42.482248703Z","level":"INFO","msg":"request completed","request_id":"44112055-0cd3-4192-9bd5-89b66d08aa9d","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9226893}
+[GIN] 2026/11/26 - 07:05:42 | 200 |    9.257793ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:05:43.394243994Z","level":"INFO","msg":"request started","request_id":"c8966db6-5170-47dc-96d0-d12fde1450fa","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:43.394277362Z","level":"INFO","msg":"request completed","request_id":"c8966db6-5170-47dc-96d0-d12fde1450fa","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":83755}
+[GIN] 2026/11/26 - 07:05:43 | 200 |      92.978µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:05:43.39524746Z","level":"INFO","msg":"request started","request_id":"011bd613-c45b-4a72-a925-c91a65ec098d","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:43.395428812Z","level":"INFO","msg":"request completed","request_id":"011bd613-c45b-4a72-a925-c91a65ec098d","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":220917}
+[GIN] 2026/11/26 - 07:05:43 | 200 |     356.415µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:05:52.473188516Z","level":"INFO","msg":"request started","request_id":"60c0d6f6-fbc0-470d-b0e4-67a3919a503b","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:05:52.482291717Z","level":"INFO","msg":"request completed","request_id":"60c0d6f6-fbc0-470d-b0e4-67a3919a503b","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9160305}
+[GIN] 2026/11/26 - 07:05:52 | 200 |    9.187499ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:05:58.398609404Z","level":"INFO","msg":"request started","request_id":"884509e5-8cd9-493e-ac13-12a336963888","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:58.398702148Z","level":"INFO","msg":"request completed","request_id":"884509e5-8cd9-493e-ac13-12a336963888","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":168510}
+[GIN] 2026/11/26 - 07:05:58 | 200 |     221.247µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:05:58.399456126Z","level":"INFO","msg":"request started","request_id":"8db8cdd3-3839-48b9-acb4-020b57bfaf0d","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:05:58.399572318Z","level":"INFO","msg":"request completed","request_id":"8db8cdd3-3839-48b9-acb4-020b57bfaf0d","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":205866}
+[GIN] 2026/11/26 - 07:05:58 | 200 |     262.858µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:06:02.161777375Z","level":"INFO","msg":"request started","request_id":"f6fc0738-b2c4-4d7f-a857-e8f082a28b85","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:06:02.161844731Z","level":"INFO","msg":"request completed","request_id":"f6fc0738-b2c4-4d7f-a857-e8f082a28b85","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":118657}
+[GIN] 2026/11/26 - 07:06:02 | 200 |     180.617µs |      10.0.11.82 | GET      "/ping"
+{"time":"2026-11-26T07:06:02.47253977Z","level":"INFO","msg":"request started","request_id":"826df316-834a-455c-b88d-d4c6a3fcc736","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:06:02.481760775Z","level":"INFO","msg":"request completed","request_id":"826df316-834a-455c-b88d-d4c6a3fcc736","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9275043}
+[GIN] 2026/11/26 - 07:06:02 | 200 |    9.304284ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:06:12.472672791Z","level":"INFO","msg":"request started","request_id":"58ca41d3-b625-4add-8856-d90bd6e61ce5","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:06:12.48197744Z","level":"INFO","msg":"request completed","request_id":"58ca41d3-b625-4add-8856-d90bd6e61ce5","method":"GET","path":"/health","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":9348651}
+[GIN] 2026/11/26 - 07:06:12 | 200 |    9.381523ms |      10.0.11.82 | GET      "/health"
+{"time":"2026-11-26T07:06:13.403843488Z","level":"INFO","msg":"request started","request_id":"d36a5a99-af7d-429b-b6de-39161775e3b2","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:06:13.40387899Z","level":"INFO","msg":"request completed","request_id":"d36a5a99-af7d-429b-b6de-39161775e3b2","method":"GET","path":"/ping","ip":"10.0.1.195","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":86402}
+[GIN] 2026/11/26 - 07:06:13 | 200 |      96.849µs |      10.0.1.195 | GET      "/ping"
+{"time":"2026-11-26T07:06:13.404053231Z","level":"INFO","msg":"request started","request_id":"7e320579-4241-4ded-9c50-206ef8934dfd","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0"}
+{"time":"2026-11-26T07:06:13.40407227Z","level":"INFO","msg":"request completed","request_id":"7e320579-4241-4ded-9c50-206ef8934dfd","method":"GET","path":"/ping","ip":"10.0.2.247","user_agent":"ELB-HealthChecker/2.0","status":200,"latency":45912}
+[GIN] 2026/11/26 - 07:06:13 | 200 |      51.795µs |      10.0.2.247 | GET      "/ping"
+{"time":"2026-11-26T07:06:22.160468498Z","level":"INFO","msg":"request started","request_id":"07c44d02-4314-4092-874c-20987f71e0df","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34"}
+{"time":"2026-11-26T07:06:22.160511329Z","level":"INFO","msg":"request completed","request_id":"07c44d02-4314-4092-874c-20987f71e0df","method":"GET","path":"/ping","ip":"10.0.11.82","user_agent":"kube-probe/1.34","status":200,"latency":161736}
+[GIN] 2026/11/26 - 07:06:22 | 200 |     194.389µs |      10.0.11.82 | GET      "/ping"
